@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# Script de instalação do SNEP 3.07 Comunity para Debian 10
+# Script de instalação do SNEP 3.07 Community para Debian 10
+# Script criado com base em um PDF do grupo do SNEP no Telegram
+# Autor do script: Diego Romanio de Almeida @diegoromanio
 
 #####
 echo "Iniciando instalação ..."
