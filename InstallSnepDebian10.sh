@@ -8,6 +8,14 @@ echo "Iniciando instalação ..."
 sleep 1
 
 #####
+echo "Ajustando cores do shell ..."
+cd ~
+rm -rf ~/.bashrc
+cp /etc/skel/.bashrc ~/
+echo ":syntax enable" >> .vimrc
+exec bash
+
+#####
 echo "Fazendo ajustes no path ..."
 cat <<EOF >>/root/.bashrc
 export PATH="/usr/local/sbin/:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:${PATH}"
